@@ -1,0 +1,176 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Jenn and Jen for MAPS School Board</title>
+
+<!--SCALING ON IOS DEVICES-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+<link href="css/master.css" rel="stylesheet" type="text/css">
+<link href="css/nav.css" rel="stylesheet" type="text/css">
+	
+<!--GOOGLE FONTS-->
+<link href="https://fonts.googleapis.com/css?family=Muli:400,400i,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Playfair+Display+SC:400,700i&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	
+<div id="container">
+<div class="navfixer"><!-- NAVIGATION -->
+<div id="nav" class="desktop">
+        <ul>
+		<li><a href="index.html">RETURN TO MAIN PAGE</a></li>
+        </ul>
+</div>
+</div><!-- END NAV -->
+
+<div id="mnavfixer" class="mnavanim closedmenu"><!-- MOBILE NAVIGATION -->
+	
+<div id="mnav">
+		
+		<div id="mnavlist">
+			<br>
+			<a href="index.html">RETURN TO MAIN PAGE</a>
+		</div>
+	    <div id="menuind"><img src="images/mmpuck.png" alt="Menu"/></div>
+</div>
+</div><!-- END MOBILE NAV -->
+<img style="display:none" src="images/toptabm.png" alt="banner">	
+
+<div id="sec10" class="section">
+	<div class="title">
+	WHY I AM RUNNING FOR MAPS BoE 
+	</div>
+	<div class="story">
+	<div class="storyleft">
+	   <img src="images/ray.jpg" alt="Jenn Ray"/>
+		<h6>Jen Ray</h6>
+	</div>  
+	<div class="storyright">
+	   <p>I have not taken this decision to run for MAPS school board lightly. The health, well-being, and education of all our children is a foundational part of our community. Because I care deeply about the people of Marquette and am passionate about helping others, particularly our children and youth, I know running for the school board is the right choice.</p>
+<p>I am a hard worker, a proud mother of three Marquette Senior High School graduates who are now amazing young adults, a partner with my husband in our local businesses and an engaged community member.</p>
+<p>After graduating from MSHS in 1983, college and my career took me away from Marquette for a number of years. In 2001, my husband and I chose to move back to this great town to raise our children and build a meaningful future.</p>
+<p>Over the past years, I have been incredibly impressed with our teachers, administrators, students, parents and fellow community members who are clearly committed to and passionate about the education and well-being of our children. Moving forward, there will be many issues confronting our schools, both in the short and long term.</p>
+<p>However, I have complete faith in our schools and community, and I want to be a constructive part of the growth necessary to make our schools even better for every child.</p>
+<p>As a business owner confronted with the challenges of COVID, I am aware of the support our administrators, educators, and children are going to need over this next year.</p>
+<p>Being flexible and adaptable to the ever-changing regional, state, and national regulations and guidelines will be essential, while continuing to deliver superior educational experiences to our MAPS students. Undoubtedly, the educational landscape is only going to become more fluid in the coming years, and I would be honored to be a part of helping MAPS adapt to that landscape.</p>
+<p>While contending with the short term concerns, I am excited about the long term goals of the MAPS system. As a Board member, I believe recommendations to our superintendent should be based in research, data, and best-practice standards. I am committed to making decisions rooted in evidence, while centering around my values of inclusivity, kindness, and community.</p>
+<p>I believe MAPS should be the exemplary school system which meets the 21st century challenges head-on. The task of developing safe and innovative learning environments within and beyond the classrooms is a critical component.</p>
+<p>MAPS has made it a point to expand its curriculum by utilizing the strengths of our community. I hope to help our schools develop the links between our MAPS students and regional businesses, universities, institutions, and community organizations. Having 70 employees, many of whom are high schoolers and college students, I understand the importance of collaboration, listening, and working together.</p>
+<p>These partnerships are what will have a positive impact on the success of each child in the long run. Our strengths are in our diversity of abilities, knowledge, and understanding.</p>
+<p>I am committed to bringing an innovative, collaborative, and inclusive voice to the MAPS board. I hope voters in November will support me in that commitment. Until then, I welcome conversation and dialogue about the future of our wonderful students.</p>
+<p>Please do not hesitate to stop me for a chat if you see me around Marquette and please attend any of the several open-dialogue sessions we have planned in the coming months.</p>
+
+	</div>
+   </div>
+</div> <!--	Sec 3 Jenn Klipp-->
+	
+<div id="footer">
+	<div id="footright">
+	Paid for by the Committee to Elect Jenn and Jen for MAPS BoE
+	</div>
+	<div id="footleft"><a href="https://www.facebook.com/Friends-of-Jenn-and-Jen-Klipp-and-Ray-for-MAPS-School-Board-653306758613623" target="_blank"><img src="images/fb.jpg" alt="Facebook Link"/></a></div>
+</div>
+
+</div> <!-- Container -->
+	
+	
+<!--EXTERNAL JAVASCRIPTS LINKED HERE-->
+<script type="text/javascript" src="scripts/jquery-3.4.1.min.js"></script>
+
+<!--EXTERNAL JAVASCRIPTS LINKED HERE-->
+	
+<!----------------------------- JQuery -->
+	
+<script type="text/javascript">
+	
+//START AT TOP	
+$(document).ready(function() {
+  $("html,body").animate({scrollTop: 0}, 100); //100ms for example
+});
+	
+
+	
+// Open Menu --------------
+$(document).ready(function() { 
+        $("#mnav").click(function() {
+				$("#mnavfixer").toggleClass("openmenu");
+		});
+	
+});
+	
+// MENU SCROLLER MOBILE --------------
+$(document).ready(function(){
+	$("#mnav a").click(function() {
+	 
+	
+    $("#mnavfixer").toggleClass('openmenu'); //close mobile menu
+	
+	var target = $(this.hash);
+  	target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+	
+ 	 $('html, body').animate({
+    	scrollTop: target.offset().top - 50 //to compensate for the nav closing
+  	}, 2000);
+  
+  return false;
+	});
+	
+});
+
+// MENU SCROLLER DESKTOP --------------
+$(document).ready(function(){
+	$("#nav a").click(function() {
+	
+  	var target = $(this.hash);
+  	target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+	
+ 	 $('html, body').animate({
+    	scrollTop: target.offset().top - 40 //to compensate for the nav bar
+  	}, 2000);
+  
+  return false;
+	});
+	
+});
+
+// MENU SCROLLER FOOTER --------------
+$(document).ready(function(){
+	$("#footright a").click(function() {
+	
+  	var target = $(this.hash);
+  	target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+	
+ 	 $('html, body').animate({
+    	scrollTop: target.offset().top - 40 //to compensate for the nav bar
+  	}, 2000);
+  
+  return false;
+	});
+	
+});
+
+// SLIDESHOW
+
+
+function Divs() {
+    var divs= $('#quotes div'),
+        now = divs.filter(':visible'),
+        next = now.next().length ? now.next() : divs.first(),
+        speed = 1000;
+
+    now.fadeOut(speed);
+    next.fadeIn(speed);
+}
+
+$(function () {
+    setInterval(Divs, 5000);
+});
+
+	
+</script>
+	
+</body>
+</html>
